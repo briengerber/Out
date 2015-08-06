@@ -1,0 +1,40 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:itemTextAppearance">@style/MenuWidgetTheme</item>
+        <!--<item name="android:actionBarWidgetTheme">@style/ActionBarWidget</item>-->
+        <item name="android:textViewStyle">@style/TextViewStyle</item>
+        <item name="android:dialogTheme">@style/PreferenceDialogStyle</item>
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+    </style>
+
+    <style name="ToolbarCustomStyle" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/actionBarTextColor</item>
+        <item name="android:textColorSecondary">@color/actionBarTextColor</item>
+    </style>
+
+    <style name="MenuWidgetTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchIcon">@drawable/ic_search_white_24dp</item>
+    </style>
+
+    <style name="PreferenceDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/cardColor</item>
+    </style>
+
+    <style name="TextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <!--
+        <item name="android:textColor">@color/textColor</item>
+        -->
+    </style>
+
+</resources>

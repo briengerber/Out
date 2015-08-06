@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="General">
+        <com.bgdev.out.LogoutDialogPreference
+            android:id="@+id/logoutDialog"
+            android:summary="Logout from account"
+            android:dialogTitle="Are you sure want to logout?"
+            android:positiveButtonText="Yes"
+            android:negativeButtonText="No"/>
+
+        <ListPreference
+            android:key="home_record_limit"
+            android:title="Status Limit"
+            android:summary="Number of records loaded per refresh"
+            android:persistent="true"
+            android:entries="@array/num_of_records_loaded_array"
+            android:entryValues="@array/num_of_records_loaded_array"
+            android:defaultValue="25"/>
+
+        <ListPreference
+            android:key="server_update_frequency"
+            android:title="Update Frequency"
+            android:summary="How frequency the application downloads information in the background"
+            android:persistent="true"
+            android:entries="@array/update_freq_values_string"
+            android:entryValues="@array/update_freq_values"
+            android:defaultValue="86400000"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notifications">
+
+        <CheckBoxPreference
+            android:key="mess_notify_enabled"
+            android:title="Notifications"
+            android:defaultValue="true"
+            android:persistent="true"/>
+
+        <RingtonePreference
+            android:key="notify_ring"
+            android:title="Sound"
+            android:ringtoneType="notification"
+            android:defaultValue="content://settings/system/notification_sound"/>
+
+        <CheckBoxPreference
+            android:key="notify_vibrate"
+            android:title="Vibrate"
+            android:defaultValue="false"
+            android:persistent="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

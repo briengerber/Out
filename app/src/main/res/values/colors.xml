@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="textColor">#000</color>
+    <color name="actionBarTextColor">#FFF</color>
+    <color name="cardColor">#FFF</color>
+    <color name="backgroundColor">#E0E0E0</color>
+    <color name="fab_color">#ff5252</color>
+    <color name="fab_staying_in_color">#ff5252</color>
+    <color name="fab_staying_in_color_p">#ff0000</color>
+    <color name="fab_going_out_color">#00b200</color>
+    <color name="fab_going_out_color_p">#007f00</color>
+    <color name="fab_undecided_color">#ffff00</color>
+    <color name="fab_undecided_color_p">#cccc00</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="colorAccentDark">#D32F2F</color>
+</resources>

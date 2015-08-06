@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="fab_margin">24dp</dimen>
+    <dimen name="fab_subnode_margin">32dp</dimen>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/top_padding">
+
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp">
+
+            <com.facebook.widget.ProfilePictureView
+                android:id="@+id/mess_profile_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                facebook:preset_size="small"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="User Name"
+                android:id="@+id/mess_user_name"
+                android:layout_toRightOf="@+id/mess_profile_picture"
+                android:layout_toEndOf="@+id/mess_profile_picture"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Time Stamp"
+                android:id="@+id/mess_time_stamp"
+                android:layout_alignTop="@+id/mess_user_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="The long messsage text will go here"
+                android:id="@+id/mess_content"
+                android:layout_below="@id/mess_user_name"
+                android:layout_alignLeft="@+id/mess_user_name"
+                android:layout_alignStart="@+id/mess_user_name"
+                android:paddingBottom="10dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
